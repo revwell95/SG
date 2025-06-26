@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+
+# Important pages for crawling
+Allow: /universities
+Allow: /programs
+Allow: /scholarships
+Allow: /guide
+Allow: /blog
+
+# Sitemap location
+Sitemap: https://study-in-germany.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Block admin/private areas (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Block search result pages to avoid duplicate content
+Disallow: /search?
+Disallow: /*?search=
+Disallow: /*?filter=
+
+# Block private user areas (if implemented)
+Disallow: /profile/
+Disallow: /dashboard/
+Disallow: /account/
